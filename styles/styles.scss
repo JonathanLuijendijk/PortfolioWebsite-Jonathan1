@@ -1,0 +1,145 @@
+$htmlbackground : rgb(152, 152, 152);
+
+@import "./mobile.scss";
+
+
+
+@media only screen and (min-width: 600px) {
+
+
+html {
+    background-color: $htmlbackground;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    display: grid;
+    grid-template-columns: 10% auto;
+    grid-template-rows:8% 22% 22% 22% 22% auto;
+    grid-template-areas: 
+    "hd h1"
+    "Home Home"
+    "About About"
+    "Projects Projects"
+    "Contact Contact"
+    "footer footer"
+    ;
+    color: white;
+}
+
+header {
+    grid-area: hd;
+
+}
+
+h1 {
+    grid-area: h1;
+    min-height: 150px;
+    justify-content: center;
+    align-items: center;
+    background: rgb(40, 51, 93);
+    border-style: double;
+    padding-top: 100px;
+    border-radius: 50px;
+}
+
+h2 {
+    margin: 0px 50px
+}
+
+ul {
+    position: fixed;
+    min-height: 128px;
+    margin-top: 21px;
+    justify-content: center;
+    align-items: center;
+    background: rgb(41,44,91);
+    border-style: double;
+
+    li a {
+        display: block;
+        color: rgb(255, 255, 255);
+        padding: 16px 16px;
+        text-decoration: none;
+
+        & :hover {
+            background-color: rgb(181, 181, 181);
+            color: rgb(34, 26, 52);
+          }
+      }
+
+}
+
+
+#Home {
+    grid-area: Home;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    background: rgb(118, 118, 187);
+    border-style: double;
+    border-radius: 75px;
+    margin-top: 60px;
+}
+
+#About {
+    grid-area: About;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    background: rgb(90, 90, 164);
+    border-style: double;
+    border-radius: 75px;
+    margin-top: 60px;
+
+}
+
+#Projects {
+    grid-area: Projects;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    background: rgb(69, 71, 110);
+    border-style: double;
+    border-radius: 75px;
+    margin-top: 60px;
+
+}
+
+#Contact {
+    grid-area: Contact;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    background: rgb(41, 44, 91);
+    border-style: double;
+    border-radius: 75px;
+    margin-top: 60px;
+
+}
+
+#text {
+    text-decoration-color: aliceblue;
+}
+
+footer {
+    text-align: center;
+    grid-area: footer;
+    background-color: rgb(23, 25, 62);
+    height: 150px;
+    width: 100%;
+}
+
+
+    
+}

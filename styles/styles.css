@@ -1,0 +1,404 @@
+@media only screen and (max-width: 600px) {
+  .dropbtn {
+    position: fixed;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    top: 4vw;
+    left: 4vw;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    -webkit-box-shadow: 0px 8px 16px 0px;
+            box-shadow: 0px 8px 16px 0px;
+    z-index: 1;
+    left: 0px;
+    top: 8vw;
+  }
+  .dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .show {
+    display: block;
+  }
+}
+
+html {
+  background-color: #989898;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5% auto;
+      grid-template-columns: 5% auto;
+  -ms-grid-rows: 8% 22% 22% 22% 22% auto;
+      grid-template-rows: 8% 22% 22% 22% 22% auto;
+      grid-template-areas: "hd h1"
+ "Home"
+ "About"
+ "Projects"
+ "Contact"
+ "footer footer";
+  color: white;
+}
+
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: hd;
+}
+
+h1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: h1;
+  min-height: 150px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #28335d;
+  border-style: double;
+  padding-top: 100px;
+  border-radius: 50px;
+}
+
+h2 {
+  margin: 0px 50px;
+}
+
+ul {
+  position: fixed;
+  min-height: 128px;
+  margin-top: 21px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #292c5b;
+  border-style: double;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #b5b5b5;
+  color: #221a34;
+}
+
+#Home {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: Home;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 400px;
+  background: #7676bb;
+  border-style: double;
+  border-radius: 75px;
+  margin-top: 60px;
+}
+
+#About {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: About;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 400px;
+  background: #5a5aa4;
+  border-style: double;
+  border-radius: 75px;
+  margin-top: 60px;
+}
+
+#Projects {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: Projects;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 400px;
+  background: #45476e;
+  border-style: double;
+  border-radius: 75px;
+  margin-top: 60px;
+}
+
+#Contact {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: Contact;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 400px;
+  background: #292c5b;
+  border-style: double;
+  border-radius: 75px;
+  margin-top: 60px;
+}
+
+/*
+rgb(41, 44, 91)
+*/
+#text {
+  -webkit-text-decoration-color: aliceblue;
+          text-decoration-color: aliceblue;
+}
+
+footer {
+  text-align: center;
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: footer;
+  background-color: #17193e;
+  height: 150px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  html {
+    background-color: #989898;
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Josefin Sans', sans-serif;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 10% auto;
+        grid-template-columns: 10% auto;
+    -ms-grid-rows: 8% 22% 22% 22% 22% auto;
+        grid-template-rows: 8% 22% 22% 22% 22% auto;
+        grid-template-areas: "hd h1"
+ "Home Home"
+ "About About"
+ "Projects Projects"
+ "Contact Contact"
+ "footer footer";
+    color: white;
+  }
+  header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: hd;
+  }
+  h1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: h1;
+    min-height: 150px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #28335d;
+    border-style: double;
+    padding-top: 100px;
+    border-radius: 50px;
+  }
+  h2 {
+    margin: 0px 50px;
+  }
+  ul {
+    position: fixed;
+    min-height: 128px;
+    margin-top: 21px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #292c5b;
+    border-style: double;
+  }
+  ul li a {
+    display: block;
+    color: white;
+    padding: 16px 16px;
+    text-decoration: none;
+  }
+  ul li a :hover {
+    background-color: #b5b5b5;
+    color: #221a34;
+  }
+  #Home {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: Home;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 400px;
+    background: #7676bb;
+    border-style: double;
+    border-radius: 75px;
+    margin-top: 60px;
+  }
+  #About {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: About;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 400px;
+    background: #5a5aa4;
+    border-style: double;
+    border-radius: 75px;
+    margin-top: 60px;
+  }
+  #Projects {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: Projects;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 400px;
+    background: #45476e;
+    border-style: double;
+    border-radius: 75px;
+    margin-top: 60px;
+  }
+  #Contact {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: Contact;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 400px;
+    background: #292c5b;
+    border-style: double;
+    border-radius: 75px;
+    margin-top: 60px;
+  }
+  #text {
+    -webkit-text-decoration-color: aliceblue;
+            text-decoration-color: aliceblue;
+  }
+  footer {
+    text-align: center;
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: footer;
+    background-color: #17193e;
+    height: 150px;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
